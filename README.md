@@ -36,3 +36,12 @@ npm install
 ```bash
 λ gh repo create nome-do-repo --public --source=. --remote=origin
  ```
+
+# Adicionar tag para a versão inicial
+```bash
+git tag  #ver as tags q existem
+git tag -a v1.0.0 -m "Initial release: Data generator for MySQL, PostgreSQL and MongoDB" #add a tag
+git push -u origin main --tags #push das tags
+git tag -d v1.0.0 #deleta a tag local
+git push --delete origin v1.0.0 #deleta remotamente
+```
