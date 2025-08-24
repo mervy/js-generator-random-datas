@@ -1,26 +1,40 @@
 {
-  "name": "randomdatasgenerator",
+  "name": "multi-db-data-generator",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "generatorFaker.js",
+  "type": "module",
   "scripts": {
+    "dev": "node generateFaker.js",
+    "start": "node generateFaker.js",
+    "generate": "node generateFaker.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "```js  λ npm init -y  λ npm install bcrypt",
+  "keywords": [
+    "data-generator",
+    "mysql",
+    "postgresql",
+    "mongodb",
+    "fake-data",
+    "database",
+    "faker",
+    "bcrypt"
+  ],
+  "author": "Mr. Web Master",
+  "license": "MIT",
+  "description": "Generate random sample data for MySQL, PostgreSQL and MongoDB databases with relational consistency",
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
-    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mervy/js-generator-random-datas.git"
   },
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/mervy/js-generator-random-datas/issues"
   },
-  "homepage": "https://github.com/mervy/js-generator-random-datas#readme"
+  "homepage": "https://github.com/mervy/js-generator-random-datas#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
