@@ -1,11 +1,25 @@
-# Generator Random Datas
+# Multi-Database Data Generator
 
-**- Iniciar projeto em node.js**
+A Node.js script to generate sample data for MySQL, PostgreSQL and MongoDB databases.
+
+## Features
+
+- Generate sample data for authors, categories, articles, newsletters and visitors
+- Export to JSON, SQL and MongoDB compatible formats
+- Configurable data quantities
+- Foreign key consistency across all datasets
+
+## Installation
+
 ```bash
- λ npm init -y
- λ npm install bcrypt
-
+npm install
 ```
+
+- Use assim:
+
+```bash
+ λ npm run start
+ ```
 
 **- Criar repositório local**
 ```bash
@@ -21,10 +35,4 @@
 **- Criar reposito remoto**
 ```bash
 λ gh repo create nome-do-repo --public --source=. --remote=origin
- ```
-
-**- Usar library para gerar dados**
-```bash
- λ npm install @faker-js/faker bcryptjs
-
  ```
