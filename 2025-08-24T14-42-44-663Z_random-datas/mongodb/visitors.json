@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "articles_id": 33,
+    "ip": "3fe4:2261:1eab:763b:606c:ae5f:bde7:ad54",
+    "acessed_in": "2025-07-09T19:22:16.160Z"
+  },
+  {
+    "id": 2,
+    "articles_id": 28,
+    "ip": "155.64.239.159",
+    "acessed_in": "2025-07-25T13:24:05.642Z"
+  },
+  {
+    "id": 3,
+    "articles_id": 47,
+    "ip": "1fa6:f9ce:fcbf:5ccc:aead:5df9:173f:b2e1",
+    "acessed_in": "2025-08-11T00:48:32.119Z"
+  },
+  {
+    "id": 4,
+    "articles_id": 96,
+    "ip": "206.218.194.184",
+    "acessed_in": "2025-05-30T06:15:31.929Z"
+  },
+  {
+    "id": 5,
+    "articles_id": 42,
+    "ip": "febf:beba:f2ca:1d8b:93dd:5cc7:9344:fcca",
+    "acessed_in": "2025-07-09T07:12:58.159Z"
+  },
+  {
+    "id": 6,
+    "articles_id": 43,
+    "ip": "878e:b5ac:dfcd:bc1c:7d41:55a7:2ef2:3cbf",
+    "acessed_in": "2025-07-17T22:48:44.898Z"
+  },
+  {
+    "id": 7,
+    "articles_id": 50,
+    "ip": "91.99.181.217",
+    "acessed_in": "2025-05-23T01:09:18.669Z"
+  },
+  {
+    "id": 8,
+    "articles_id": 29,
+    "ip": "05cf:06ab:7488:fcc2:9c3b:d6ad:74f7:abf6",
+    "acessed_in": "2025-08-11T02:30:13.316Z"
+  },
+  {
+    "id": 9,
+    "articles_id": 70,
+    "ip": "141.169.86.56",
+    "acessed_in": "2025-07-20T01:30:00.625Z"
+  },
+  {
+    "id": 10,
+    "articles_id": 18,
+    "ip": "5c31:3bd4:8eac:bb4d:bddb:f8c7:e5a9:646f",
+    "acessed_in": "2025-06-19T04:32:39.162Z"
+  },
+  {
+    "id": 11,
+    "articles_id": 76,
+    "ip": "e99e:2aaf:440b:0cd2:ee0c:dd16:caa4:f396",
+    "acessed_in": "2025-05-25T03:18:06.817Z"
+  },
+  {
+    "id": 12,
+    "articles_id": 29,
+    "ip": "d74e:8bba:a75e:6b1c:ea78:c0bc:2f3a:0768",
+    "acessed_in": "2025-06-14T19:52:01.120Z"
+  },
+  {
+    "id": 13,
+    "articles_id": 91,
+    "ip": "3faf:5b08:3eec:1794:aecc:61f5:f516:5e0a",
+    "acessed_in": "2025-07-07T03:51:43.074Z"
+  },
+  {
+    "id": 14,
+    "articles_id": 51,
+    "ip": "215.161.116.111",
+    "acessed_in": "2025-07-21T22:59:57.788Z"
+  },
+  {
+    "id": 15,
+    "articles_id": 49,
+    "ip": "a3e5:b5fc:fec6:3df8:4aaf:6cc5:b4a8:4166",
+    "acessed_in": "2025-07-14T20:12:43.862Z"
+  },
+  {
+    "id": 16,
+    "articles_id": 22,
+    "ip": "9e02:94a1:bea1:ea9a:f9e9:c5ff:dc7d:8446",
+    "acessed_in": "2025-08-21T14:54:07.993Z"
+  },
+  {
+    "id": 17,
+    "articles_id": 45,
+    "ip": "182.12.141.235",
+    "acessed_in": "2025-07-02T09:18:40.923Z"
+  },
+  {
+    "id": 18,
+    "articles_id": 17,
+    "ip": "04dc:440b:6233:d3fe:d5bd:ecd0:0420:dbdf",
+    "acessed_in": "2025-07-18T11:31:52.151Z"
+  },
+  {
+    "id": 19,
+    "articles_id": 69,
+    "ip": "198.217.124.233",
+    "acessed_in": "2025-06-25T09:51:48.076Z"
+  },
+  {
+    "id": 20,
+    "articles_id": 93,
+    "ip": "233.97.201.180",
+    "acessed_in": "2025-06-14T08:48:00.464Z"
+  },
+  {
+    "id": 21,
+    "articles_id": 53,
+    "ip": "165.75.129.223",
+    "acessed_in": "2025-08-11T15:54:42.603Z"
+  },
+  {
+    "id": 22,
+    "articles_id": 54,
+    "ip": "4.86.113.61",
+    "acessed_in": "2025-06-25T13:11:33.788Z"
+  },
+  {
+    "id": 23,
+    "articles_id": 50,
+    "ip": "60.218.169.94",
+    "acessed_in": "2025-07-12T21:17:24.759Z"
+  },
+  {
+    "id": 24,
+    "articles_id": 35,
+    "ip": "77.184.13.243",
+    "acessed_in": "2025-08-09T23:06:53.955Z"
+  },
+  {
+    "id": 25,
+    "articles_id": 42,
+    "ip": "f2ab:0fca:1d71:e86b:b02b:42f5:e6fd:3069",
+    "acessed_in": "2025-08-22T07:01:46.193Z"
+  },
+  {
+    "id": 26,
+    "articles_id": 4,
+    "ip": "76ba:e72d:ed6d:1bd1:3ed4:e3e6:08da:f68f",
+    "acessed_in": "2025-06-29T10:43:34.515Z"
+  },
+  {
+    "id": 27,
+    "articles_id": 15,
+    "ip": "9fcf:3cfc:af93:4c5a:3c54:a17f:f776:fcf8",
+    "acessed_in": "2025-05-30T11:13:43.147Z"
+  },
+  {
+    "id": 28,
+    "articles_id": 40,
+    "ip": "db99:eaee:635e:381f:ebd8:d467:ebe9:bfaf",
+    "acessed_in": "2025-06-05T17:08:06.072Z"
+  },
+  {
+    "id": 29,
+    "articles_id": 20,
+    "ip": "b84d:8fd8:c3e6:b4da:a2ae:737a:8c4f:ac0b",
+    "acessed_in": "2025-06-01T23:55:44.854Z"
+  },
+  {
+    "id": 30,
+    "articles_id": 65,
+    "ip": "583e:ed9b:9792:0e6e:cd1d:fca7:aa39:3f3f",
+    "acessed_in": "2025-07-27T17:43:11.229Z"
+  }
+]
