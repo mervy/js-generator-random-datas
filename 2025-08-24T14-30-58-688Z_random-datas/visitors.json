@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "articles_id": 76,
+    "ip": "71.130.143.218",
+    "acessed_in": "2025-06-09T01:27:31.069Z"
+  },
+  {
+    "id": 2,
+    "articles_id": 77,
+    "ip": "2acb:f2ad:7aa0:22f3:2b1a:f031:acbb:efa2",
+    "acessed_in": "2025-07-12T10:47:28.266Z"
+  },
+  {
+    "id": 3,
+    "articles_id": 79,
+    "ip": "114.155.121.186",
+    "acessed_in": "2025-07-27T22:38:36.722Z"
+  },
+  {
+    "id": 4,
+    "articles_id": 70,
+    "ip": "f7bd:e438:dda2:fca2:c7a6:a845:77bd:3ba1",
+    "acessed_in": "2025-07-27T11:43:21.570Z"
+  },
+  {
+    "id": 5,
+    "articles_id": 90,
+    "ip": "cbfc:a0de:1bfd:313d:1d88:6e15:3bcd:26ce",
+    "acessed_in": "2025-07-08T21:58:51.990Z"
+  },
+  {
+    "id": 6,
+    "articles_id": 17,
+    "ip": "141.123.206.251",
+    "acessed_in": "2025-07-30T07:38:11.999Z"
+  },
+  {
+    "id": 7,
+    "articles_id": 99,
+    "ip": "ce43:96c6:71bc:eb8c:3cb7:fe92:cb8c:d77e",
+    "acessed_in": "2025-08-01T21:45:35.762Z"
+  },
+  {
+    "id": 8,
+    "articles_id": 64,
+    "ip": "a61a:ff3f:e34e:8f8b:d296:030c:6e8e:06ac",
+    "acessed_in": "2025-05-29T02:41:51.417Z"
+  },
+  {
+    "id": 9,
+    "articles_id": 1,
+    "ip": "113.58.87.114",
+    "acessed_in": "2025-07-01T21:56:33.053Z"
+  },
+  {
+    "id": 10,
+    "articles_id": 60,
+    "ip": "25.188.32.203",
+    "acessed_in": "2025-07-11T08:46:27.415Z"
+  },
+  {
+    "id": 11,
+    "articles_id": 86,
+    "ip": "164.206.133.7",
+    "acessed_in": "2025-07-24T14:04:35.251Z"
+  },
+  {
+    "id": 12,
+    "articles_id": 13,
+    "ip": "6.145.77.89",
+    "acessed_in": "2025-05-28T21:35:52.751Z"
+  },
+  {
+    "id": 13,
+    "articles_id": 96,
+    "ip": "ba04:a5da:dc07:9aff:36ef:fad8:d9d4:4e9f",
+    "acessed_in": "2025-06-09T21:06:30.644Z"
+  },
+  {
+    "id": 14,
+    "articles_id": 10,
+    "ip": "223.88.174.65",
+    "acessed_in": "2025-07-09T08:12:48.783Z"
+  },
+  {
+    "id": 15,
+    "articles_id": 13,
+    "ip": "8ec3:ddb9:d72d:dc65:a8af:6ef7:ddb3:e9be",
+    "acessed_in": "2025-08-15T14:46:32.986Z"
+  },
+  {
+    "id": 16,
+    "articles_id": 7,
+    "ip": "cccd:edb9:6e23:e216:5cba:c9d2:59ef:30df",
+    "acessed_in": "2025-07-25T07:29:05.018Z"
+  },
+  {
+    "id": 17,
+    "articles_id": 16,
+    "ip": "fac2:6585:dcd3:1dd1:8f99:16c3:0f0a:31e4",
+    "acessed_in": "2025-07-19T05:01:33.334Z"
+  },
+  {
+    "id": 18,
+    "articles_id": 16,
+    "ip": "abea:6ff1:e8f1:e444:baa9:cffd:e934:ceb6",
+    "acessed_in": "2025-07-02T09:37:01.271Z"
+  },
+  {
+    "id": 19,
+    "articles_id": 72,
+    "ip": "f2e2:e5a6:73a2:d6ca:8cbf:0dad:eca2:5458",
+    "acessed_in": "2025-06-05T11:23:05.135Z"
+  },
+  {
+    "id": 20,
+    "articles_id": 36,
+    "ip": "5f42:9e1a:74a5:7094:2ea2:a5bf:da8b:b6ed",
+    "acessed_in": "2025-07-25T14:00:36.130Z"
+  },
+  {
+    "id": 21,
+    "articles_id": 66,
+    "ip": "4519:74ce:b14f:c7f1:adce:aa07:db2c:10fa",
+    "acessed_in": "2025-06-05T21:17:24.333Z"
+  },
+  {
+    "id": 22,
+    "articles_id": 80,
+    "ip": "217.199.193.253",
+    "acessed_in": "2025-08-12T18:39:51.180Z"
+  },
+  {
+    "id": 23,
+    "articles_id": 57,
+    "ip": "214.55.229.55",
+    "acessed_in": "2025-05-21T13:30:35.336Z"
+  },
+  {
+    "id": 24,
+    "articles_id": 4,
+    "ip": "169.106.161.123",
+    "acessed_in": "2025-06-25T11:53:27.439Z"
+  },
+  {
+    "id": 25,
+    "articles_id": 25,
+    "ip": "ca86:29fb:8419:ccac:bddc:85f9:f5e7:cf7c",
+    "acessed_in": "2025-06-30T20:49:20.360Z"
+  },
+  {
+    "id": 26,
+    "articles_id": 79,
+    "ip": "14.46.160.121",
+    "acessed_in": "2025-06-12T08:23:57.405Z"
+  },
+  {
+    "id": 27,
+    "articles_id": 47,
+    "ip": "16fa:8ca3:8297:3ae0:797d:0c4c:36ee:91ba",
+    "acessed_in": "2025-06-29T12:29:51.481Z"
+  },
+  {
+    "id": 28,
+    "articles_id": 17,
+    "ip": "9ffd:01d1:83e6:44d4:aaff:cc90:68f8:98a0",
+    "acessed_in": "2025-07-07T03:34:07.142Z"
+  },
+  {
+    "id": 29,
+    "articles_id": 65,
+    "ip": "203.57.60.155",
+    "acessed_in": "2025-07-02T17:21:28.181Z"
+  },
+  {
+    "id": 30,
+    "articles_id": 97,
+    "ip": "ac28:6f2c:88d0:db5d:a97e:b883:39c9:1dc5",
+    "acessed_in": "2025-07-11T03:11:14.948Z"
+  }
+]
