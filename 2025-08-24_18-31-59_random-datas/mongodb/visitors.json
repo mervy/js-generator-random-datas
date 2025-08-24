@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "articles_id": 33,
+    "ip": "243.192.165.73",
+    "acessed_in": "2025-07-22T09:02:12.336Z"
+  },
+  {
+    "id": 2,
+    "articles_id": 37,
+    "ip": "a53e:a4cc:28eb:bf97:fbac:cbca:ba8a:cac5",
+    "acessed_in": "2025-07-21T09:38:57.914Z"
+  },
+  {
+    "id": 3,
+    "articles_id": 84,
+    "ip": "0b2e:6c6a:a4e1:6f4d:f81f:bfd8:a9b8:e219",
+    "acessed_in": "2025-07-08T07:55:33.707Z"
+  },
+  {
+    "id": 4,
+    "articles_id": 86,
+    "ip": "23.66.120.152",
+    "acessed_in": "2025-08-03T21:02:21.575Z"
+  },
+  {
+    "id": 5,
+    "articles_id": 23,
+    "ip": "216e:e9dc:551d:4a9c:7dbe:0cf1:9c6d:371a",
+    "acessed_in": "2025-07-01T23:16:59.455Z"
+  },
+  {
+    "id": 6,
+    "articles_id": 44,
+    "ip": "71.75.170.118",
+    "acessed_in": "2025-06-28T02:34:41.010Z"
+  },
+  {
+    "id": 7,
+    "articles_id": 80,
+    "ip": "112.63.99.84",
+    "acessed_in": "2025-07-18T09:33:59.386Z"
+  },
+  {
+    "id": 8,
+    "articles_id": 15,
+    "ip": "162.159.88.26",
+    "acessed_in": "2025-06-25T04:08:05.685Z"
+  },
+  {
+    "id": 9,
+    "articles_id": 61,
+    "ip": "dcc7:ddcc:5eef:62ff:66bd:bdbd:6ae2:c7fc",
+    "acessed_in": "2025-07-19T09:41:55.192Z"
+  },
+  {
+    "id": 10,
+    "articles_id": 100,
+    "ip": "72.58.95.49",
+    "acessed_in": "2025-05-28T20:44:01.529Z"
+  },
+  {
+    "id": 11,
+    "articles_id": 85,
+    "ip": "b29b:14ca:868e:bf1e:5cd6:072d:f5be:83ea",
+    "acessed_in": "2025-08-24T03:03:13.827Z"
+  },
+  {
+    "id": 12,
+    "articles_id": 1,
+    "ip": "7e66:ec02:bfd2:c0b1:858b:bbdf:fd56:d9fa",
+    "acessed_in": "2025-07-04T15:44:59.602Z"
+  },
+  {
+    "id": 13,
+    "articles_id": 88,
+    "ip": "b899:ccae:b2cf:9b0a:d7b5:3df3:cfee:dbce",
+    "acessed_in": "2025-06-11T07:26:10.928Z"
+  },
+  {
+    "id": 14,
+    "articles_id": 12,
+    "ip": "126.7.58.236",
+    "acessed_in": "2025-07-05T03:06:16.068Z"
+  },
+  {
+    "id": 15,
+    "articles_id": 22,
+    "ip": "224.50.22.116",
+    "acessed_in": "2025-06-30T20:04:39.623Z"
+  },
+  {
+    "id": 16,
+    "articles_id": 62,
+    "ip": "9.159.14.238",
+    "acessed_in": "2025-06-28T02:12:53.362Z"
+  },
+  {
+    "id": 17,
+    "articles_id": 82,
+    "ip": "127.214.171.178",
+    "acessed_in": "2025-07-06T04:02:32.347Z"
+  },
+  {
+    "id": 18,
+    "articles_id": 61,
+    "ip": "b5fb:f0ed:f53f:80cc:3adf:867a:aadd:ee58",
+    "acessed_in": "2025-06-18T03:11:10.449Z"
+  },
+  {
+    "id": 19,
+    "articles_id": 54,
+    "ip": "153.169.36.93",
+    "acessed_in": "2025-05-31T23:21:30.624Z"
+  },
+  {
+    "id": 20,
+    "articles_id": 94,
+    "ip": "8608:af46:ac30:c1eb:880d:953a:e97b:d3aa",
+    "acessed_in": "2025-08-03T07:29:55.679Z"
+  },
+  {
+    "id": 21,
+    "articles_id": 64,
+    "ip": "102.230.12.20",
+    "acessed_in": "2025-07-10T10:27:13.615Z"
+  },
+  {
+    "id": 22,
+    "articles_id": 75,
+    "ip": "219.100.123.242",
+    "acessed_in": "2025-08-08T00:56:21.446Z"
+  },
+  {
+    "id": 23,
+    "articles_id": 71,
+    "ip": "193.15.2.74",
+    "acessed_in": "2025-08-16T23:33:59.515Z"
+  },
+  {
+    "id": 24,
+    "articles_id": 56,
+    "ip": "182.18.123.7",
+    "acessed_in": "2025-07-15T17:51:19.148Z"
+  },
+  {
+    "id": 25,
+    "articles_id": 44,
+    "ip": "233.48.196.12",
+    "acessed_in": "2025-08-21T05:14:07.475Z"
+  },
+  {
+    "id": 26,
+    "articles_id": 27,
+    "ip": "170.169.11.75",
+    "acessed_in": "2025-08-15T20:20:03.401Z"
+  },
+  {
+    "id": 27,
+    "articles_id": 74,
+    "ip": "33.7.141.105",
+    "acessed_in": "2025-06-14T07:49:23.085Z"
+  },
+  {
+    "id": 28,
+    "articles_id": 30,
+    "ip": "fdc6:bc95:acf2:fbbd:dc8f:fbfe:8fe6:0614",
+    "acessed_in": "2025-07-02T19:20:50.396Z"
+  },
+  {
+    "id": 29,
+    "articles_id": 92,
+    "ip": "50bd:fead:f3a1:bbe0:3bbf:fa9f:9a7a:aebc",
+    "acessed_in": "2025-07-01T03:07:50.979Z"
+  },
+  {
+    "id": 30,
+    "articles_id": 93,
+    "ip": "200.54.145.20",
+    "acessed_in": "2025-07-10T18:41:21.879Z"
+  }
+]
