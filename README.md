@@ -1,47 +1,61 @@
 # Multi-Database Data Generator
 
-A Node.js script to generate sample data for MySQL, PostgreSQL and MongoDB databases.
+A Node.js script for generating sample data for MySQL, PostgreSQL, and MongoDB databases.
 
 ## Features
 
-- Generate sample data for authors, categories, articles, newsletters and visitors
-- Export to JSON, SQL and MongoDB compatible formats
+- Generates sample data for authors, categories, articles, newsletters, and visitors
+- Exports data to JSON, SQL, and MongoDB-compatible formats
 - Configurable data quantities
-- Foreign key consistency across all datasets
+- Ensures foreign key consistency across all datasets
 
 ## Installation
 
 ```bash
-npm install
+λ npm install
 ```
 
-- Use assim:
+## Usage
 
 ```bash
- λ npm run start
- ```
+λ npm run start
+```
 
-**- Criar repositório local**
+## Setting Up a Local Repository
+
 ```bash
 λ git init
 λ touch .gitignore
 λ echo "/node_modules" >> .gitignore
-λ echo package-lock.json >> .gitignore
+λ echo "package-lock.json" >> .gitignore
 λ git branch -m main
 λ git add .
 λ git commit -m "Initial commit"
 ```
 
-**- Criar reposito remoto**
-```bash
-λ gh repo create nome-do-repo --public --source=. --remote=origin
- ```
+## Creating a Remote Repository
 
-# Adicionar tag para a versão inicial
 ```bash
-git tag  #ver as tags q existem
-git tag -a v1.0.0 -m "Initial release: Data generator for MySQL, PostgreSQL and MongoDB" #add a tag
-git push -u origin main --tags #push das tags
-git tag -d v1.0.0 #deleta a tag local
-git push --delete origin v1.0.0 #deleta remotamente
+λ gh repo create <repo-name> --public --source=. --remote=origin
 ```
+
+## Tagging the Initial Release
+
+```bash
+λ git tag                # List existing tags
+λ git tag -a v1.0.0 -m "Initial release: Data generator for MySQL, PostgreSQL and MongoDB"
+λ git push -u origin main --tags
+λ git tag -d v1.0.0      # Delete local tag
+λ git push --delete origin v1.0.0   # Delete remote tag
+```
+
+## Como usar
+
+1. Abra o arquivo `generateFaker.js` e defina a quantidade de registros em `CONFIG`.
+2. Abra um terminal e execute:
+
+```bash
+λ node start
+```
+
+3. Será gerada uma pasta com tabelas e dados para MongoDB, MySQL e PostgreSQL.

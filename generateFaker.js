@@ -9,11 +9,11 @@ const CONFIG = {
   outputDir: `${new Date().toLocaleString('sv-SE').replace(' ', '_').replace(/:/g, '-')}_random-datas`,
   databases: ['mysql', 'postgres', 'mongodb'],
   counts: {
-    authors: 50,
-    categories: 30,
-    articles: 100,
-    newsletters: 30,
-    visitors: 150
+    authors: 1000,
+    categories: 200,
+    articles: 10000,
+    newsletters: 300,
+    visitors: 1500
   }
 };
 
@@ -44,7 +44,7 @@ const generateAuthors = async (count = 50) => {
     const surname = faker.person.lastName();
     const nickname = faker.internet.username().toLowerCase();
     const email = faker.internet.email({ firstName: name, lastName: surname }).toLowerCase();
-    const status = faker.datatype.boolean();
+    const status = faker.number.int({ min: 0, max: 1 });
 
     authors.push({ 
       id: i, 
@@ -77,7 +77,7 @@ const generateCategories = async (count = 30) => {
       description += `<p>${words}</p>\n\n`;
     }
     
-    const status = faker.datatype.boolean();
+    const status = faker.number.int({ min: 0, max: 1 });
     categories.push({ id: i, name, slug, description, status });
   }
 
@@ -107,7 +107,7 @@ const generateArticles = async (count = 100, authorCount, categoryCount) => {
       }
     }
     
-    const status = faker.datatype.boolean();
+    const status = faker.number.int({ min: 0, max: 1 });
     const created_at = faker.date.past({ years: 3 });
     const updated_at = faker.date.between({ from: created_at, to: new Date() });
     const authors_id = faker.number.int({ min: 1, max: authorCount });
@@ -184,58 +184,67 @@ const saveSQL = async (db, filename, table, data) => {
     // Cabeçalho SQL
     sql += `-- Dados de ${table}\n`;
     sql += `CREATE TABLE IF NOT EXISTS ${table} (\n`;
-    
-    // Definição das colunas
+
     const columnDefinitions = [];
-    
-    // Definir estrutura da tabela baseada no nome
+
+    // Funções auxiliares
+    const autoInc = db === 'postgres'
+      ? 'SERIAL PRIMARY KEY'
+      : 'INTEGER PRIMARY KEY AUTO_INCREMENT';
+
+    const textType = db === 'postgres'
+      ? 'TEXT'
+      : 'LONGTEXT';
+
+
+    // Estruturas específicas
     if (table === 'authors') {
-      columnDefinitions.push('  id INTEGER PRIMARY KEY AUTO_INCREMENT');      
-      columnDefinitions.push('  name VARCHAR(100)');
-      columnDefinitions.push('  surname VARCHAR(100)');
-      columnDefinitions.push('  nickname VARCHAR(100)');
-      columnDefinitions.push('  email VARCHAR(255)');
-      columnDefinitions.push('  password VARCHAR(255)');
-      columnDefinitions.push('  hash VARCHAR(255)');
-      columnDefinitions.push('  status BOOLEAN');
+      columnDefinitions.push(`  id ${autoInc}`);
+      columnDefinitions.push('  name VARCHAR(32)');
+      columnDefinitions.push('  surname VARCHAR(32)');
+      columnDefinitions.push('  nickname VARCHAR(32)');
+      columnDefinitions.push('  email VARCHAR(128)');
+      columnDefinitions.push('  password VARCHAR(32)');
+      columnDefinitions.push('  hash VARCHAR(60)');
+      columnDefinitions.push('  status SMALLINT NOT NULL CHECK (status IN (0,1))');
     } 
     else if (table === 'categories') {
-      columnDefinitions.push('  id INTEGER PRIMARY KEY AUTO_INCREMENT');
+      columnDefinitions.push(`  id ${autoInc}`);
       columnDefinitions.push('  name VARCHAR(100)');
       columnDefinitions.push('  slug VARCHAR(100)');
       columnDefinitions.push('  description TEXT');
-      columnDefinitions.push('  status BOOLEAN');
+      columnDefinitions.push('  status SMALLINT NOT NULL CHECK (status IN (0,1))');
     }
     else if (table === 'articles') {
-      columnDefinitions.push('  id INTEGER PRIMARY KEY AUTO_INCREMENT');
-      columnDefinitions.push('  title VARCHAR(255)');
-      columnDefinitions.push('  image VARCHAR(500)');
-      columnDefinitions.push('  content LONGTEXT');
-      columnDefinitions.push('  status BOOLEAN');
-      columnDefinitions.push('  created_at TIMESTAMP');
-      columnDefinitions.push('  updated_at TIMESTAMP');
+      columnDefinitions.push(`  id ${autoInc}`);
+      columnDefinitions.push('  title VARCHAR(128)');
+      columnDefinitions.push('  image VARCHAR(64)');
+      columnDefinitions.push(`  content ${textType}`);
+      columnDefinitions.push('  status SMALLINT NOT NULL CHECK (status IN (0,1))');
+      columnDefinitions.push('  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
+      columnDefinitions.push('  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
       columnDefinitions.push('  authors_id INTEGER');
       columnDefinitions.push('  categories_id INTEGER');
       columnDefinitions.push('  FOREIGN KEY (authors_id) REFERENCES authors(id)');
       columnDefinitions.push('  FOREIGN KEY (categories_id) REFERENCES categories(id)');
     }
     else if (table === 'newsletters') {
-      columnDefinitions.push('  id INTEGER PRIMARY KEY AUTO_INCREMENT');
+      columnDefinitions.push(`  id ${autoInc}`);
       columnDefinitions.push('  name VARCHAR(100)');
-      columnDefinitions.push('  email VARCHAR(255)');
+      columnDefinitions.push('  email VARCHAR(128)');
       columnDefinitions.push('  ip VARCHAR(45)');
-      columnDefinitions.push('  registered_in TIMESTAMP');
+      columnDefinitions.push('  registered_in TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
     }
     else if (table === 'visitors') {
-      columnDefinitions.push('  id INTEGER PRIMARY KEY AUTO_INCREMENT');
+      columnDefinitions.push(`  id ${autoInc}`);
       columnDefinitions.push('  articles_id INTEGER');
       columnDefinitions.push('  ip VARCHAR(45)');
-      columnDefinitions.push('  accessed_in TIMESTAMP');
+      columnDefinitions.push('  accessed_in TIMESTAMP DEFAULT CURRENT_TIMESTAMP');
       columnDefinitions.push('  FOREIGN KEY (articles_id) REFERENCES articles(id)');
     }
-    
+
     sql += columnDefinitions.join(',\n') + '\n);\n\n';
-    
+
     // Inserções
     data.forEach(row => {
       const values = keys.map(k => escapeSQLValue(row[k])).join(', ');
@@ -244,6 +253,7 @@ const saveSQL = async (db, filename, table, data) => {
 
     const filePath = path.join(CONFIG.outputDir, db, `${filename}.sql`);
     await writeFile(filePath, sql);
+
   } catch (error) {
     console.error(`Erro ao salvar SQL para ${db}/${filename}:`, error);
     throw error;
